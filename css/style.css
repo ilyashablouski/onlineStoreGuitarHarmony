@@ -1,0 +1,103 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 1100;
+    overflow: auto;
+}
+
+html {
+    font-size: 14px; 
+}
+
+body {
+
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100%;
+    /* max-width: 1000px; */
+    position: relative;
+    /* margin: 0 auto; */
+    color: black;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0px;
+    font-weight: 100;
+
+}
+
+.menu-item a, nav ul li  {
+    padding: 1em .5em;
+    text-transform: uppercase;
+    font-family: 'Questrial-Regular', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: .2em;
+}
+
+a, a:visited, a:link {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+
+
+
+
+
+
+
+
+
+/* {
+    font-family: 'CutiveMono-Regular', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+ {
+    font-family: 'Questrial-Regular', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: .2em;
+    font-size: 1.5rem;
+} */
+
+
+@font-face {
+    font-family: 'CutiveMono-Regular';
+    src: url('../fonts/CutiveMono-Regular/CutiveMono-Regular.eot');
+    src: url('../fonts/CutiveMono-Regular/CutiveMono-Regular.woff2') format('woff2'),
+         url('../fonts/CutiveMono-Regular/CutiveMono-Regular.woff') format('woff'),
+         url('../fonts/CutiveMono-Regular/CutiveMono-Regular.ttf') format('truetype'),
+         url('../fonts/CutiveMono-Regular/CutiveMono-Regular.svg#CutiveMono-Regular') format('svg'),
+         url('../fonts/CutiveMono-Regular/CutiveMono-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Questrial-Regular';
+    src: url('../fonts/Questrial-Regular/Questrial-Regular.eot');
+    src: url('../fonts/Questrial-Regular/Questrial-Regular.woff2') format('woff2'),
+         url('../fonts/Questrial-Regular/Questrial-Regular.woff') format('woff'),
+         url('../fonts/Questrial-Regular/Questrial-Regular.ttf') format('truetype'),
+         url('../fonts/Questrial-Regular/Questrial-Regular.svg#Questrial-Regular') format('svg'),
+         url('../fonts/Questrial-Regular/Questrial-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
