@@ -9,6 +9,11 @@
   <!-- Import main styles -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/adaptive.css">
+  <link rel="stylesheet" href="/slider/slick/slick.css"/>
+  <!-- // Add the new slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" href="/slider/slick/slick-theme.css"/>
+  
+
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -22,7 +27,25 @@
 <body>
 
   <div class="wrapper">
-    <header></header>
+    <header class="header">
+      <form action="" class="search-form" method="GET">
+        <button class="button-search" type="submit"></button>
+        <input type="search" name="s" id="search" class="input-text" placeholder="Поиск по магазину. . ." required="">
+      </form>
+
+      <a href="#"><img src="images/logo/logo_1024x768_bl.svg" class="logo-img" alt="Guitar Harmony"></a>
+      
+      <div class="utils">
+        <div class="social-links">
+          <a class="social-icon social-icon-f" href="https://web.facebook.com" ></a>
+          <a class="social-icon social-icon-t" href="https://twitter.com" ></a>
+          <a class="social-icon social-icon-i" href="https://www.instagram.com/?hl=ru" ></a>
+          <a class="cabinet-link" href="#"><span>Вход</span></a>         
+          <a class="social-icon trash-icon" href="#"></a>        
+        </div>   
+      </div>
+    </div>
+    </header>
 
     <nav class="top-nav">
       <ul class="menu">
@@ -34,7 +57,12 @@
       </ul>
     </nav>
 
-    <div class="slider"></div>
+    <div class="slider">
+      <div class="slider-inner"><img src="images/sl/sl1.jpg" alt="Картинка слайда 1" class="slider-image"></div>
+      <div class="slider-inner"><img src="images/sl/sl2.jpg" alt="Картинка слайда 2" class="slider-image"></div>
+      <div class="slider-inner"><img src="images/sl/sl3.jpg" alt="Картинка слайда 3" class="slider-image"></div>
+      <div class="slider-inner"><img src="images/sl/sl4.jpg" alt="Картинка слайда 4" class="slider-image"></div>
+    </div>
 
     <div class="main"></div>
 
@@ -42,11 +70,26 @@
   </div>
 
   <!--Import jQuery-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <!-- jQuery for older IE -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Site Sripts -->
+  <script src="slider/slick/slick.min.js"></script>
+
+  <!-- <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    });
+  </script> -->
+
   <script src="js/functions.js"></script>
+  
 
 </body>
 </html>

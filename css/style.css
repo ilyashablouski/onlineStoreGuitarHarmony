@@ -2,16 +2,13 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: auto;
     max-width: 1100;
-    overflow: auto;
+    
 }
 
 html {
     font-size: 14px; 
-}
-
-body {
-
 }
 
 * {
@@ -20,19 +17,29 @@ body {
     box-sizing: border-box;
 }
 
-.wrapper{
+.fluid-img {
     width: 100%;
-    /* max-width: 1000px; */
-    position: relative;
-    /* margin: 0 auto; */
-    color: black;
+    max-width: 100%;
 }
 
+.wrapper{
+    width: 100%;
+    min-width: 740px;
+    max-width: 1500px;
+    position: relative;
+    margin: 0 auto;
+    color: black;
+    background-color: aquamarine;
+}
+
+/* Стили для nav*/
 .menu {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;    
     list-style-type: none;
     padding: 0px;
+    margin: 1rem;
     font-weight: 100;
 
 }
@@ -43,6 +50,15 @@ body {
     font-family: 'Questrial-Regular', Arial, Helvetica, sans-serif;
     font-weight: 100;
     letter-spacing: .2em;
+    transition: color 0.125s ease-in-out;
+}
+
+nav>ul {
+    font-size: .8em;
+}
+
+.menu-item a:hover {
+    color: #FF5269;
 }
 
 a, a:visited, a:link {
@@ -50,6 +66,164 @@ a, a:visited, a:link {
     color: inherit;
     font: inherit;
 }
+
+/* Стили для header*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.search-form {
+    margin: auto 0;
+}
+
+.button-search {
+    position: relative;
+    top: 0.5rem;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+
+.button-search::before {
+        content: "";
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background: url('../images/icons/sprite_social.png') no-repeat -149px -5px;
+}
+
+
+a, .button-search:active, .button-search:focus {
+    outline: none;
+}
+
+.button-search::-moz-focus-inner {
+    border: 0;
+}
+
+.input-text {
+    padding: 0.5rem 0.5rem;
+    font-family: 'Questrial-Regular', Arial, Helvetica, sans-serif;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.input-text:hover {
+    outline: 1px solid #7EACD1;
+}
+
+.logo-img {
+    max-width: 12rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.utils {
+    margin: auto 0;
+}
+
+.social-icon {
+    padding: 0 2px;
+}
+
+.social-icon::before {
+    content: "";
+    display: inline-block;
+}
+
+.social-icon-f::before {
+    width: 24px;
+    height: 24px;
+    background: url('../images/icons/sprite_social.png') no-repeat -39px -5px;
+
+}
+
+.social-icon-t::before {
+    width: 24px;
+    height: 24px;
+    background: url('../images/icons/sprite_social.png') no-repeat -73px -5px;
+}
+
+.social-icon-i::before {
+    width: 24px;
+    height: 24px;
+    background: url('../images/icons/sprite_social.png') no-repeat -5px -5px;
+}
+
+.cabinet-link:after {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url('../images/icons/sprite_social.png') no-repeat -191px -5px;
+}
+
+.cabinet-link {
+    position: relative;
+    top: 0.3rem;
+    margin-left: 4rem;
+}
+.cabinet-link span {
+    position: relative;
+    bottom: 0.6rem;
+    font-family: 'Questrial-Regular', Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    transition: color 0.125s ease-in-out;
+}
+
+.cabinet-link span:hover {
+    color: #FF5269;
+}
+
+
+.trash-icon::before {
+    position: relative;
+    top: 0.3rem;
+    width: 32px;
+    height: 32px;
+    background: url('../images/icons/sprite_social.png') no-repeat -107px -5px;
+}
+
+/* Слайдер */
+
+
+/* {
+    display: block;
+    background-image: url('/images/logo/logo_1024x768_bl.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    block-size: cover;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
