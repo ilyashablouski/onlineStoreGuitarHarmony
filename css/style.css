@@ -3,8 +3,9 @@ html, body {
     padding: 0;
     width: 100%;
     height: auto;
-    max-width: 1100;
-    
+    height: 5000px;
+    font-family: 'Montresor', Arial, Helvetica, sans-serif;
+    letter-spacing: .2em;
 }
 
 html {
@@ -24,47 +25,10 @@ html {
 
 .wrapper{
     width: 100%;
-    min-width: 740px;
-    max-width: 1500px;
     position: relative;
     margin: 0 auto;
     color: black;
-    background-color: aquamarine;
-}
-
-/* Стили для nav*/
-.menu {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;    
-    list-style-type: none;
-    padding: 0px;
-    margin: 1rem;
-    font-weight: 100;
-
-}
-
-.menu-item a, nav ul li  {
-    padding: 1em .5em;
-    text-transform: uppercase;
-    font-family: 'Questrial-Regular', Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    letter-spacing: .2em;
-    transition: color 0.125s ease-in-out;
-}
-
-nav>ul {
-    font-size: .8em;
-}
-
-.menu-item a:hover {
-    color: #FF5269;
-}
-
-a, a:visited, a:link {
-    text-decoration: none;
-    color: inherit;
-    font: inherit;
+    /* background-color: #88c988; */
 }
 
 /* Стили для header*/
@@ -72,6 +36,7 @@ a, a:visited, a:link {
 .header {
     display: flex;
     justify-content: space-between;
+    min-width: 740px;
     padding: 0 1rem;
 }
 
@@ -89,11 +54,11 @@ a, a:visited, a:link {
 }
 
 .button-search::before {
-        content: "";
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        background: url('../images/icons/sprite_social.png') no-repeat -149px -5px;
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url('../images/icons/sprite_social.png') no-repeat -149px -5px;
 }
 
 
@@ -107,7 +72,7 @@ a, .button-search:active, .button-search:focus {
 
 .input-text {
     padding: 0.5rem 0.5rem;
-    font-family: 'Questrial-Regular', Arial, Helvetica, sans-serif;
+    font-family: 'AlgeriaOne', Arial, Helvetica, sans-serif;
     border: none;
     font-size: 1.2rem;
 }
@@ -170,7 +135,7 @@ a, .button-search:active, .button-search:focus {
 .cabinet-link span {
     position: relative;
     bottom: 0.6rem;
-    font-family: 'Questrial-Regular', Arial, Helvetica, sans-serif;
+    font-family: 'AlgeriaOne', Arial, Helvetica, sans-serif;
     padding-bottom: 10px;
     transition: color 0.125s ease-in-out;
 }
@@ -188,7 +153,123 @@ a, .button-search:active, .button-search:focus {
     background: url('../images/icons/sprite_social.png') no-repeat -107px -5px;
 }
 
+/* Стили для nav*/
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+    list-style-type: none;
+    padding: 0px;
+    margin: 1rem;
+    font-weight: 100;
+
+}
+
+.menu-item a, nav ul li  {
+    padding: 1em .5em;
+    text-transform: uppercase;
+    font-family: 'AlgeriaOne', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: .2em;
+    transition: color 0.125s ease-in-out;
+}
+
+nav>ul {
+    font-size: .8em;
+}
+
+.menu-item a:hover {
+    color: #FF5269;
+}
+
+a, a:visited, a:link {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+
 /* Слайдер */
+
+/* .slider {
+    max-width: 1600px;
+} */
+
+.slides {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Главная часть */
+
+.container-merits {
+    max-width: 1300px;
+    display: flex;
+    background-color: #F6F6F6;
+    justify-content: space-between;
+    margin: 1rem auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.block-merits {
+    margin: 0 auto;
+    width: 66px;
+    height: 66px;
+    background-position: center;
+    margin-bottom: 1.5rem;
+}
+
+.block-mer span {
+    color: #7EACD1;
+}
+
+.delivery-img {
+    background: url('../images/icons/sprite_merits.png') no-repeat -5px -5px;
+    
+}
+
+.choise-img {
+    background: url('../images/icons/sprite_merits.png') no-repeat -233px -5px;
+}
+
+.price-img{
+    background: url('../images/icons/sprite_merits.png') no-repeat -157px -5px;
+}
+
+.settings-img {
+    background: url('../images/icons/sprite_merits.png') no-repeat -81px -5px;
+}
+
+.main-container-arrivals {
+    border-top: 1px solid #7EACD1;
+    border-bottom: 1px solid #7EACD1;
+}
+
+.container-arrivals {
+    display: flex;
+    max-width: 1300px;
+}
+
+.item-arrivals {
+
+}
+
+.img-arrivals-1{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* {
@@ -233,43 +314,41 @@ a, .button-search:active, .button-search:focus {
 
 
 
-/* {
-    font-family: 'CutiveMono-Regular', sans-serif;
+/* h3 {
+    font-family: 'Montresor', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
-}
+} */
 
 
- {
-    font-family: 'Questrial-Regular', sans-serif;
+ /* {
+    font-family: 'AlgeriaOne', sans-serif;
     font-size: 1rem;
-    font-weight: 100;
     letter-spacing: .2em;
     font-size: 1.5rem;
 } */
 
 
 @font-face {
-    font-family: 'CutiveMono-Regular';
-    src: url('../fonts/CutiveMono-Regular/CutiveMono-Regular.eot');
-    src: url('../fonts/CutiveMono-Regular/CutiveMono-Regular.woff2') format('woff2'),
-         url('../fonts/CutiveMono-Regular/CutiveMono-Regular.woff') format('woff'),
-         url('../fonts/CutiveMono-Regular/CutiveMono-Regular.ttf') format('truetype'),
-         url('../fonts/CutiveMono-Regular/CutiveMono-Regular.svg#CutiveMono-Regular') format('svg'),
-         url('../fonts/CutiveMono-Regular/CutiveMono-Regular.eot?#iefix') format('embedded-opentype');
+    font-family: 'AlgeriaOne';
+    src: url('../fonts/AlgeriaOne/AlgeriaOne.eot');
+    src: url('../fonts/AlgeriaOne/AlgeriaOne.woff2') format('woff2'),
+         url('../fonts/AlgeriaOne/AlgeriaOne.woff') format('woff'),
+         url('../fonts/AlgeriaOne/AlgeriaOne.ttf') format('truetype'),
+         url('../fonts/AlgeriaOne/AlgeriaOne.svg#AlgeriaOne') format('svg'),
+         url('../fonts/AlgeriaOne/AlgeriaOne.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 
 @font-face {
-    font-family: 'Questrial-Regular';
-    src: url('../fonts/Questrial-Regular/Questrial-Regular.eot');
-    src: url('../fonts/Questrial-Regular/Questrial-Regular.woff2') format('woff2'),
-         url('../fonts/Questrial-Regular/Questrial-Regular.woff') format('woff'),
-         url('../fonts/Questrial-Regular/Questrial-Regular.ttf') format('truetype'),
-         url('../fonts/Questrial-Regular/Questrial-Regular.svg#Questrial-Regular') format('svg'),
-         url('../fonts/Questrial-Regular/Questrial-Regular.eot?#iefix') format('embedded-opentype');
+    font-family: 'Montresor';
+    src: url('../fonts/Montresor/Montresor.eot');
+    src: url('../fonts/Montresor/Montresor.woff2') format('woff2'),
+         url('../fonts/Montresor/Montresor.woff') format('woff'),
+         url('../fonts/Montresor/Montresor.ttf') format('truetype'),
+         url('../fonts/Montresor/Montresor.svg#Montresor') format('svg'),
+         url('../fonts/Montresor/Montresor.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
   }
