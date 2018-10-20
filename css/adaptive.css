@@ -1,25 +1,30 @@
 /* min-width: не менее; max-width: не более; */
 
 
-@media (max-width: 280px){
+@media (min-width: 280px){
     nav>ul {
         font-size: 1rem;
     }
 
+    .gul-up {
+        visibility: hidden;
+    }
 }
 
 /* равно 641px и больше */
-@media (max-width: 641px) {
+@media (min-width: 641px) {
     nav>ul {
         font-size: 1rem;
     }
-
 }
 
 /* равно 961px и больше  */
 @media (min-width: 961px) {
     nav>ul {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
+    .gul-up {
+        visibility: inherit;
+    }
 }
