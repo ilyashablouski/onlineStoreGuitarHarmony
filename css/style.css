@@ -18,18 +18,8 @@ html {
     letter-spacing: .2em;
 }
 
-* {
+*, *::after, *::before {
     box-sizing: border-box;
-}
-
-section,
-article,
-aside,
-footer,
-header,
-nav,
-hgroup {
-    display: block;
 }
 
 .fluid-img {

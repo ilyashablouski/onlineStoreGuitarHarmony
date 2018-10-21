@@ -12,16 +12,8 @@ html {
     font-size: 14px;
 }
 
-* {
+*, *::after, *::before {
     box-sizing: border-box;
-}
-
-section,
-aside,
-footer,
-header,
-nav {
-    display: block;
 }
 
 .fluid-img {
