@@ -7,19 +7,17 @@ html, body {
     letter-spacing: .2em;
 }
 
+html {
+    font-size: 14px; 
+}
+
 .font-text-title {
     text-transform: uppercase;
     font-family: 'AlgeriaOne', Arial, Helvetica, sans-serif;
     letter-spacing: .2em;
 }
 
-html {
-    font-size: 14px; 
-}
-
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -32,8 +30,6 @@ html {
     width: 100%;
     position: relative;
     margin: 0 auto;
-    color: black;
-    /* background-color: #88c988; */
 }
 
 /* Стили для header*/
@@ -43,6 +39,7 @@ html {
     justify-content: space-between;
     min-width: 740px;
     padding: 0 2rem;
+    box-shadow: 0 1px 3px rgba(57, 63, 72, 0.5);
 }
 
 .search-form {
@@ -51,7 +48,7 @@ html {
 
 .button-search {
     position: relative;
-    top: 0.5rem;
+    top: 0.7rem;
     background: transparent;
     cursor: pointer;
     border: none;
@@ -63,7 +60,7 @@ html {
     display: inline-block;
     width: 32px;
     height: 32px;
-    background: url('../images/icons/sprite_social.png') no-repeat -149px -5px;
+    background: url('../images/icons/sprite_social.png') no-repeat -370px -10px;
 }
 
 
@@ -75,15 +72,16 @@ a, .button-search:active, .button-search:focus {
     border: 0;
 }
 
-.input-text {
+input[type="search"], input[type="email"] {
     padding: 0.5rem 0.5rem;
     font-family: 'AlgeriaOne', Arial, Helvetica, sans-serif;
     border: none;
     font-size: 1.2rem;
+    outline: 1px solid rgba(126, 172, 209,.5);
 }
 
-.input-text:hover {
-    outline: 1px solid #7EACD1;
+.input-text:focus {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.4);
 }
 
 .logo-img {
@@ -106,40 +104,40 @@ a, .button-search:active, .button-search:focus {
 }
 
 .social-icon-f::before {
-    width: 24px;
-    height: 24px;
-    background: url('../images/icons/sprite_social.png') no-repeat -39px -5px;
+    width: 25px;
+    height: 25px;
+    background: url('../images/icons/sprite_social.png') no-repeat -100px -10px;
 
 }
 
 .social-icon-t::before {
-    width: 24px;
-    height: 24px;
-    background: url('../images/icons/sprite_social.png') no-repeat -73px -5px;
+    width: 25px;
+    height: 25px;
+    background: url('../images/icons/sprite_social.png') no-repeat -280px -10px;
 }
 
 .social-icon-i::before {
-    width: 24px;
-    height: 24px;
-    background: url('../images/icons/sprite_social.png') no-repeat -5px -5px;
+    width: 25px;
+    height: 25px;
+    background: url('../images/icons/sprite_social.png') no-repeat -145px -10px;
 }
 
 .cabinet-link:after {
     content: "";
     display: inline-block;
-    width: 32px;
-    height: 32px;
-    background: url('../images/icons/sprite_social.png') no-repeat -191px -5px;
+    width: 25px;
+    height: 25px;
+    background: url('../images/icons/sprite_social.png') no-repeat -190px -10px;
 }
 
 .cabinet-link {
-    position: relative;
-    top: 0.3rem;
-    margin-left: 4rem;
+    margin-left: 5rem;
+    margin-right: .5rem;
 }
 .cabinet-link span {
     position: relative;
     bottom: 0.6rem;
+    margin-right: .5rem;
     font-family: 'AlgeriaOne', Arial, Helvetica, sans-serif;
     padding-bottom: 10px;
     transition: color 0.125s ease-in-out;
@@ -150,12 +148,11 @@ a, .button-search:active, .button-search:focus {
 }
 
 
-.trash-icon::before {
+.shop-icon::before {
     position: relative;
-    top: 0.3rem;
-    width: 32px;
-    height: 32px;
-    background: url('../images/icons/sprite_social.png') no-repeat -107px -5px;
+    width: 25px;
+    height: 25px;
+    background: url('../images/icons/sprite_social.png') no-repeat -235px -10px;
 }
 
 /* Стили для nav*/
@@ -208,7 +205,7 @@ a, a:visited, a:link {
 
 .container-merits {
     max-width: 1300px;
-    min-width: 850px;
+    min-width: 760px;
     display: flex;
     background-color: #F6F6F6;
     justify-content: space-between;
@@ -253,10 +250,11 @@ a, a:visited, a:link {
 
 .container-arrivals {
     margin: 4rem auto;
+    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     max-width: 1300px;
-    min-width: 850px;
+    min-width: 760px;
 }
 
 .block-arrivals {
@@ -309,15 +307,11 @@ h3.title-header {
 .item-guitar img {
     position: relative;
     display: block;
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
 }
 
 .item-guitar img:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
@@ -347,36 +341,152 @@ h3.title-categories {
     color: #FF5269;       
 }
 
+.about-shop-container {
+    max-width: 1300px;
+    background-color: #F6F6F6;
+    margin: 1rem auto 3rem auto;
+    padding: 1rem;
+}
+
+h3.about-shop-title {
+    font-size: 1.5rem;
+    color: #7EACD1;
+    text-align: center;
+}
+
+.shop-container {
+    display: flex;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/*Стиль для футера */
 
 .footer {
     width: 100%;
     background-color: #000000;
+    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
+}
+
+input[type="email"] {
+    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
 }
 
 .container-footer {
     display: flex;
+    justify-content: space-between;
     margin: 0 auto;
+    padding: 2rem 1rem;
     max-width: 1300px;
+}
+
+section.footer-info {
+    flex-basis: 30%;
 }
 
 .title-footer {
     color: #ffffff;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
+.search-form-footer {
+    display: inline-block;
+    padding-top: 5px;
+}
 
+.input-text-footer, input[type="submit"]  {
+    border: 1px solid #fff !important;
+    background-color: #000000;
+    color: #fff;
+}
 
+.input-text-footer {
+    width: 100%; 
+}
 
+.input-text-footer:focus {
+    border-color: rgba(255, 255, 255, .5) !important;
+}
 
+input[type="submit"] {
+    margin-top: 1rem;
+    padding: .5rem .5rem;
+    transition: all 0.125s ease-in-out;
+}
 
+input[type="submit"]:hover {
+    border-color:#FF5269 !important;
+    color: #FF5269;
+    cursor: pointer;
+}
 
+.footer-info p {
+    margin-top: 0;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+}
 
+.footer-logo img {
+    width: 190px;
+    height: auto;
+}
 
+.button-social-icon::before {
+    content: "";
+    display: inline-block;
+    margin: 1rem 1rem 0 0; 
+}
+
+.button-facebook-icon::before {
+    width: 25px;
+    height: 25px;
+    background: url('../images/icons/sprite_social.png') no-repeat -10px -10px;
+}
+
+.button-twitter-icon::before {
+    width: 25px;
+    height: 25px;
+    background: url('../images/icons/sprite_social.png') no-repeat -325px -10px;
+}
+
+.button-instagram-icon::before {
+    width: 25px;
+    height: 25px;
+    background: url('../images/icons/sprite_social.png') no-repeat -55px -10px;
+}
+
+.footer-site-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    border-top: 1px solid #fff;
+}
+
+.footer-site-info>p {
+    color:#fff;
+    margin: 1rem 0 0 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.footer-site-info>img {
+    margin: .5rem 1rem 0 0;
+    width: auto;
+    height: 35px;
+}
 
 /* Кнопка скроллинга */
 
 .gul-up {
     position: fixed;
-    bottom: 10px;
+    bottom: 60px;
     right: 10px;
     width: 50px;
     height: 50px;
@@ -387,8 +497,6 @@ h3.title-categories {
     display: none;
     z-index: 99;
     background: #fff;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
 }
 
@@ -408,70 +516,6 @@ h3.title-categories {
     transform: rotate(-45deg);
 }
 
-
-
-
-
-
-
-
-
-/* {
-    display: block;
-    background-image: url('/images/logo/logo_1024x768_bl.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    block-size: cover;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* h3 {
-    font-family: 'Montresor', sans-serif;
-    font-size: 1rem;
-} */
-
-
- /* {
-    font-family: 'AlgeriaOne', sans-serif;
-    font-size: 1rem;
-    letter-spacing: .2em;
-    font-size: 1.5rem;
-} */
-
-
 @font-face {
     font-family: 'AlgeriaOne';
     src: url('../fonts/AlgeriaOne/AlgeriaOne.eot');
@@ -483,7 +527,6 @@ h3.title-categories {
     font-weight: normal;
     font-style: normal;
 }
-
 
 @font-face {
     font-family: 'Montresor';
@@ -497,4 +540,45 @@ h3.title-categories {
     font-style: normal;
   }
   
+  @font-face {
+    font-family: 'MoscowSansRegular';
+    src: url('../fonts/MoscowSansRegular/MoscowSansRegular.eot');
+    src: url('../fonts/MoscowSansRegular/MoscowSansRegular.woff2') format('woff2'),
+         url('../fonts/MoscowSansRegular/MoscowSansRegular.woff') format('woff'),
+         url('../fonts/MoscowSansRegular/MoscowSansRegular.ttf') format('truetype'),
+         url('../fonts/MoscowSansRegular/MoscowSansRegular.svg') format('svg'),
+         url('../fonts/MoscowSansRegular/MoscowSansRegular.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
+
+  
+  /* min-width: не менее; max-width: не более; */
+@media (min-width: 280px){
+    nav>ul {
+        font-size: 1rem;
+    }
+
+    .gul-up {
+        visibility: hidden;
+    }
+}
+
+/* равно 641px и больше */
+@media (min-width: 641px) {
+    nav>ul {
+        font-size: 1rem;
+    }
+}
+
+/* равно 961px и больше  */
+@media (min-width: 961px) {
+    nav>ul {
+        font-size: 1.2rem;
+    }
+
+    .gul-up {
+        visibility: inherit;
+    }
+}

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/adaptive.css">
   <link rel="stylesheet" href="css/slider.css"/>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>  
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,17 +26,17 @@
   <div class="wrapper">
     <header class="header">
       <form action="" class="search-form" method="GET">
-        <button class="button-search" type="submit"></button>
         <input type="search" name="s" id="search" class="input-text" placeholder="Поиск по магазину. . ." required="">
+        <button class="button-search" type="submit"></button>
       </form>
-      <a href="#"><img src="images/logo/logo_1024x768_bl.svg" class="logo-img" alt="Guitar Harmony"></a>
+      <a href="#"><img src="images/logo/logo_1024x768_bl.svg" class="logo-img fluid-img" alt="Guitar Harmony"></a>
       <div class="utils">
         <div class="social-links">
-          <a class="social-icon social-icon-f" href="https://web.facebook.com" ></a>
-          <a class="social-icon social-icon-t" href="https://twitter.com" ></a>
-          <a class="social-icon social-icon-i" href="https://www.instagram.com/?hl=ru" ></a>
+          <a class="social-icon social-icon-f" href="https://web.facebook.com" target="_blank"></a>
+          <a class="social-icon social-icon-t" href="https://twitter.com" target="_blank"></a>
+          <a class="social-icon social-icon-i" href="https://www.instagram.com/?hl=ru" target="_blank"></a>
           <a class="cabinet-link" href="#"><span>Вход</span></a>         
-          <a class="social-icon trash-icon" href="#"></a>        
+          <a class="social-icon shop-icon" href="#"></a>        
         </div>   
       </div>
     </header>
@@ -132,6 +132,17 @@
         </div>
       </div>
 
+      <div class="about-shop-container">
+        <h3 class="about-shop-title font-text-title">О магазине</h3>
+        <div class="shop-container">
+          <p>Модная на сегодняшний день тенденция покупать практически любые товары
+            через Интернет дошла и до сферы музыки. Наш магазин музыкальных инструментов,
+            несомненно, порадует вас широким ассортиментом, где и новичок, лишь начавший
+            постигать искусство музыки, и профессиональный музыкант, играющий в группе и дающий концерты,
+            смогут найти необходимые им товары.</p>
+        </div>
+      </div>
+
     </main>
   </div>
 
@@ -141,18 +152,48 @@
       <section class="footer-info">
         <aside>
           <h3 class="title-footer">Будьте всегда с нами:</h3>
-          <form action="" class="search-form" method="POST">
-            <button class="button-search" type="submit"></button>
-            <input type="search" name="s" id="search" class="input-text" placeholder="Поиск по магазину. . ." required="">
+          <form action="" class="search-form-footer" method="POST">
+            <input type="email" name="email" id="email-footer" class="input-text-footer" placeholder="Ваш e-mail адрес">
+            <input type="submit" name="join" value="Подписаться" id="btn-submit-footer" >
           </form>
         </aside>
       </section>
 
-      <section class="footer-info"><aside><h3 class="title-footer">Наши контакты:</h3></aside></section>
-      <section class="footer-info"></section>
+      <section class="footer-info">
+        <aside>
+          <h3 class="title-footer">Наши контакты:</h3>
+          <p>
+            Республика Беларусь, г. Минск, 223051
+            <br>
+            ул. Первомайская, д. 13
+            <br>
+            ishablovskiy@gmail.com
+            <br>
+            +37544-738-64-00
+          </p>
+        </aside>
+
+        <aside>
+          <div class="footer-social-media-container">
+            <a href="https://www.facebook.com/" class="button-social-icon button-facebook-icon" target="_blank"></a>
+            <a href="https://twitter.com/" class="button-social-icon button-twitter-icon" target="_blank"></a>
+            <a href="https://www.instagram.com/" class="button-social-icon button-instagram-icon" target="_blank"></a>
+          </div>
+        </aside>
+      </section>
+      
+      <section class="footer-info">
+        <aside>
+          <div class="footer-logo">
+            <img src="images/logo/logo_1024x768_wh.svg" class="fluid-img" alt="Guitar harmony"></div>
+        </aside>
+      </section>
     </div>
 
-    <div class="site-info"></div>
+    <div class="footer-site-info">
+      <p>2018 Ilya Shablovsky, LLC — Alright, alright, all rights reserved.</p>
+      <img src="images/icons/payment.svg" alt="Payment">
+    </div>
   </footer>
   <div class="gul-up"></div>
 
@@ -164,6 +205,5 @@
   <script src="js/jquery.glide.min.js"></script>
   <script src="js/custom.js"></script>
   
-
 </body>
 </html>

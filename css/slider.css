@@ -1,4 +1,4 @@
-/** Glidejs styles **/
+/* Glidejs styles */
  .slider {
 	position: relative;
   width: 100%;
@@ -10,9 +10,9 @@
 .slides {
   height: 400px;
   overflow: hidden;
-  /**	
-   * Prevent blinking issue
-   * Not tested. Experimental.
+  /*
+    Prevent blinking issue
+    Not tested. Experimental.
    */
   -webkit-backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
