@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -9,7 +8,7 @@ body {
 }
 
 html {
-    font-size: 14px;
+    font-size: 14px; 
 }
 
 .font-text-title {
@@ -22,14 +21,8 @@ html {
     box-sizing: border-box;
 }
 
-section,
-article,
-aside,
-footer,
-header,
-nav,
-hgroup {
-    display: block;
+section, article, aside, footer, header, nav, hgroup {
+    display:block;
 }
 
 .fluid-img {
@@ -37,7 +30,7 @@ hgroup {
     max-width: 100%;
 }
 
-.wrapper {
+.wrapper{
     width: 100%;
     position: relative;
     margin: 0 auto;
@@ -75,9 +68,7 @@ hgroup {
 }
 
 
-a,
-.button-search:active,
-.button-search:focus {
+a, .button-search:active, .button-search:focus {
     outline: none;
 }
 
@@ -85,17 +76,16 @@ a,
     border: 0;
 }
 
-input[type="search"],
-input[type="email"] {
+input[type="search"], input[type="email"] {
     padding: 0.5rem 0.5rem;
     font-family: 'AlgeriaOne', Arial, Helvetica, sans-serif;
     border: none;
     font-size: 1.2rem;
-    outline: 1px solid rgba(126, 172, 209, .5);
+    outline: 1px solid rgba(126, 172, 209,.5);
 }
 
 .input-text:focus {
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .4);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.4);
 }
 
 .logo-img {
@@ -148,7 +138,6 @@ input[type="email"] {
     margin-left: 5rem;
     margin-right: .5rem;
 }
-
 .cabinet-link span {
     position: relative;
     bottom: 0.6rem;
@@ -174,7 +163,7 @@ input[type="email"] {
 .menu {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
     list-style-type: none;
     padding: 0px;
     margin: 1rem;
@@ -182,8 +171,7 @@ input[type="email"] {
 
 }
 
-.menu-item a,
-nav ul li {
+.menu-item a, nav ul li  {
     padding: 1em .5em;
     text-transform: uppercase;
     font-family: 'AlgeriaOne', Arial, Helvetica, sans-serif;
@@ -199,13 +187,17 @@ nav>ul {
     color: #FF5269;
 }
 
-a,
-a:visited,
-a:link {
+a, a:visited, a:link {
     text-decoration: none;
     color: inherit;
     font: inherit;
 }
+
+/* Слайдер */
+
+/* .slider {
+    max-width: 1600px;
+} */
 
 .slides {
     list-style-type: none;
@@ -239,14 +231,14 @@ a:link {
 
 .delivery-img {
     background: url('../images/icons/sprite_merits.png') no-repeat -5px -5px;
-
+    
 }
 
 .choise-img {
     background: url('../images/icons/sprite_merits.png') no-repeat -233px -5px;
 }
 
-.price-img {
+.price-img{
     background: url('../images/icons/sprite_merits.png') no-repeat -157px -5px;
 }
 
@@ -277,7 +269,7 @@ a:link {
 
 .block-arrivals:hover {
     border: 1px solid #FF5269;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 h3.title-header {
@@ -290,13 +282,11 @@ h3.title-header {
     border-bottom: 1px solid #7EACD1;
 }
 
-.title-item,
-.price {
+.title-item, .price {
     font-size: 1.5rem;
 }
 
-.title-item:hover,
-.price:hover {
+.title-item:hover, .price:hover {
     color: #FF5269;
 }
 
@@ -351,8 +341,8 @@ h3.title-categories {
 }
 
 .item-guitar a:hover {
-    border: 1px solid #FF5269;
-    color: #FF5269;
+    border: 1px solid #FF5269; 
+    color: #FF5269;       
 }
 
 .about-shop-container {
@@ -410,15 +400,14 @@ section.footer-info {
     padding-top: 5px;
 }
 
-.input-text-footer,
-input[type="submit"] {
+.input-text-footer, input[type="submit"]  {
     border: 1px solid #fff !important;
     background-color: #000000;
     color: #fff;
 }
 
 .input-text-footer {
-    width: 100%;
+    width: 100%; 
 }
 
 .input-text-footer:focus {
@@ -432,7 +421,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    border-color: #FF5269 !important;
+    border-color:#FF5269 !important;
     color: #FF5269;
     cursor: pointer;
 }
@@ -453,7 +442,7 @@ input[type="submit"]:hover {
 .button-social-icon::before {
     content: "";
     display: inline-block;
-    margin: 1rem 1rem 0 0;
+    margin: 1rem 1rem 0 0; 
 }
 
 .button-facebook-icon::before {
@@ -483,7 +472,7 @@ input[type="submit"]:hover {
 }
 
 .footer-site-info>p {
-    color: #fff;
+    color:#fff;
     margin: 1rem 0 0 0;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -535,10 +524,10 @@ input[type="submit"]:hover {
     font-family: 'AlgeriaOne';
     src: url('../fonts/AlgeriaOne/AlgeriaOne.eot');
     src: url('../fonts/AlgeriaOne/AlgeriaOne.woff2') format('woff2'),
-        url('../fonts/AlgeriaOne/AlgeriaOne.woff') format('woff'),
-        url('../fonts/AlgeriaOne/AlgeriaOne.ttf') format('truetype'),
-        url('../fonts/AlgeriaOne/AlgeriaOne.svg#AlgeriaOne') format('svg'),
-        url('../fonts/AlgeriaOne/AlgeriaOne.eot?#iefix') format('embedded-opentype');
+         url('../fonts/AlgeriaOne/AlgeriaOne.woff') format('woff'),
+         url('../fonts/AlgeriaOne/AlgeriaOne.ttf') format('truetype'),
+         url('../fonts/AlgeriaOne/AlgeriaOne.svg#AlgeriaOne') format('svg'),
+         url('../fonts/AlgeriaOne/AlgeriaOne.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -547,30 +536,30 @@ input[type="submit"]:hover {
     font-family: 'Montresor';
     src: url('../fonts/Montresor/Montresor.eot');
     src: url('../fonts/Montresor/Montresor.woff2') format('woff2'),
-        url('../fonts/Montresor/Montresor.woff') format('woff'),
-        url('../fonts/Montresor/Montresor.ttf') format('truetype'),
-        url('../fonts/Montresor/Montresor.svg#Montresor') format('svg'),
-        url('../fonts/Montresor/Montresor.eot?#iefix') format('embedded-opentype');
+         url('../fonts/Montresor/Montresor.woff') format('woff'),
+         url('../fonts/Montresor/Montresor.ttf') format('truetype'),
+         url('../fonts/Montresor/Montresor.svg#Montresor') format('svg'),
+         url('../fonts/Montresor/Montresor.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: 'MoscowSansRegular';
     src: url('../fonts/MoscowSansRegular/MoscowSansRegular.eot');
     src: url('../fonts/MoscowSansRegular/MoscowSansRegular.woff2') format('woff2'),
-        url('../fonts/MoscowSansRegular/MoscowSansRegular.woff') format('woff'),
-        url('../fonts/MoscowSansRegular/MoscowSansRegular.ttf') format('truetype'),
-        url('../fonts/MoscowSansRegular/MoscowSansRegular.svg') format('svg'),
-        url('../fonts/MoscowSansRegular/MoscowSansRegular.eot') format('embedded-opentype');
+         url('../fonts/MoscowSansRegular/MoscowSansRegular.woff') format('woff'),
+         url('../fonts/MoscowSansRegular/MoscowSansRegular.ttf') format('truetype'),
+         url('../fonts/MoscowSansRegular/MoscowSansRegular.svg') format('svg'),
+         url('../fonts/MoscowSansRegular/MoscowSansRegular.eot') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
-}
+  }
 
 
 
-/* min-width: не менее; max-width: не более; */
-@media (min-width: 280px) {
+  /* min-width: не менее; max-width: не более; */
+@media (min-width: 280px){
     nav>ul {
         font-size: 1rem;
     }
