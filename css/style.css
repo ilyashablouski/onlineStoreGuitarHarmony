@@ -1,7 +1,5 @@
 html,
 body {
-    margin: 0;
-    padding: 0;
     width: 100%;
     height: auto;
     font-family: 'Montresor', Arial, Helvetica, sans-serif;
@@ -40,7 +38,7 @@ html {
     justify-content: space-between;
     min-width: 740px;
     padding: 0 2rem;
-    box-shadow: 0 1px 3px rgba(57, 63, 72, 0.5);
+    border-bottom: 1px solid #7EACD1;
 }
 
 .search-form {
@@ -263,12 +261,9 @@ a:link {
     flex-basis: 19.2307692%;
     padding-bottom: 1rem;
     transition: all .2s;
-}
-
-.block-arrivals:hover {
     border: 1px solid #FF5269;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+    }
 
 h3.title-header {
     display: inline-block;
@@ -389,6 +384,7 @@ section.footer-info {
 }
 
 .title-footer {
+    font-family: 'AlgeriaOne', Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-size: 1.5rem;
     margin-top: 0;
@@ -558,32 +554,28 @@ input[type="submit"]:hover {
 }
 
 
-
-/* min-width: не менее; max-width: не более; */
-@media (min-width: 280px) {
+@media (max-width: 768px) {
     nav>ul {
         font-size: 1rem;
     }
-
     .gul-up {
         visibility: hidden;
     }
 }
 
-/* равно 641px и больше */
-@media (min-width: 641px) {
-    nav>ul {
-        font-size: 1rem;
-    }
-}
-
-/* равно 961px и больше  */
-@media (min-width: 961px) {
+@media only screen and (min-width: 1170px) {
     nav>ul {
         font-size: 1.2rem;
     }
-
     .gul-up {
         visibility: inherit;
+    }
+    .block-arrivals {
+        border: none;
+        box-shadow: none;
+    }
+    .block-arrivals:hover {
+        border: 1px solid #FF5269;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 }
