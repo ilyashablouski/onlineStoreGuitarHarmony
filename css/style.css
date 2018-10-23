@@ -158,6 +158,11 @@ input[type="email"] {
     background: url('../images/icons/sprite_social.png') no-repeat -235px -10px;
 }
 
+.shop-icon span {
+    padding-left: 0.3rem;
+    font-size: 1.2rem;
+}
+
 /* Стили для nav*/
 .menu {
     display: flex;
@@ -260,9 +265,10 @@ a:link {
 .block-arrivals {
     flex-basis: 19.2307692%;
     padding-bottom: 1rem;
-    transition: all .2s;
-    border: 1px solid #FF5269;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all .125s;
+    border: 2px dashed #FF5269;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    line-height: 2rem;
     }
 
 h3.title-header {
@@ -357,6 +363,11 @@ h3.about-shop-title {
     display: flex;
     font-size: 1.5rem;
     text-align: center;
+}
+
+.about-shop-container p {
+    padding: 2rem 0;
+    line-height: 2rem;
 }
 
 /*Стиль для футера */
@@ -575,7 +586,7 @@ input[type="submit"]:hover {
         box-shadow: none;
     }
     .block-arrivals:hover {
-        border: 1px solid #FF5269;
+        border: 2px dashed #FF5269;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 }

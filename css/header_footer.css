@@ -150,6 +150,11 @@ input[type="email"] {
     background: url('../images/icons/sprite_social.png') no-repeat -235px -10px;
 }
 
+.shop-icon span {
+    padding-left: 0.3rem;
+    font-size: 1.2rem;
+}
+
 .menu {
     display: flex;
     justify-content: center;
