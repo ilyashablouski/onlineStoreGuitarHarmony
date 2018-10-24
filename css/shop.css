@@ -98,6 +98,9 @@
     padding: 1rem 0 1.5rem 0;
     color: #FF5269;
   }
+  .cd-gallery li.available-item {
+    border: 2px dashed #00FF08;
+  }
   .cd-gallery li.gap {
     /* used in combination with text-align: justify to align gallery elements */
     opacity: 0;
