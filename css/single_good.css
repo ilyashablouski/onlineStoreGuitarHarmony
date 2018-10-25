@@ -8,9 +8,10 @@ main{
     margin: 0 auto;
     justify-content: space-between;
     max-width: 1300px;
+    padding: 0 1rem;
 }
 .main-container-images{
-    flex-basis: 50%;  
+ 
 }
 .main-image{
 
@@ -22,7 +23,18 @@ main{
     height: auto;
     border: 2px dashed #7EACD1;
 }
-
+.small-track-images{
+    display: flex;
+    justify-content: start;
+}
 .reduced-image{
     display: inline-block;
+    padding-right: 0.5rem;
+}
+.reduced-image:last-child{
+    padding-right: 0;
+}
+.reduced-image img{
+    width: 75px;
+    border: 2px dashed #7EACD1;
 }
