@@ -1,20 +1,17 @@
-.main-container-images{
-    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
-    letter-spacing: 0.05rem;
-    font-size: 0.9rem;
-}
 main{
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
     max-width: 1300px;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
+}
+.main-container-images, ul{
+    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
 }
 .main-container-images{
- 
-}
-.main-image{
-
+    font-size: 0.9rem;
+    padding-right: 1.5rem;
+    letter-spacing: 0.05rem;
 }
 .main-image img{
     width: 100%;
@@ -37,4 +34,45 @@ main{
 .reduced-image img{
     width: 75px;
     border: 2px dashed #7EACD1;
+}
+section.right-column-info{
+    border-left: 2px dashed #7EACD1;
+    padding-left: 0.7rem;
+    line-height: 2rem;
+}
+h2.title-item, span.title-price{
+    font-size: 2rem;
+}
+span.title-price{
+    display: inline-block;
+    margin-top: 1rem;
+    color: #FF5269;
+}
+h3.title-description{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+ul{
+    list-style: square inside;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+}
+.input-quantity{
+    width: 4rem;
+    border-radius: 0;
+    border: 1px solid #7EACD1;
+    padding: 0.5rem 0.7rem;
+    margin-left: 1rem;
+}
+input.add-to-cart-button{
+    font-size: 1.3rem;
+    color: #7EACD1 !important;
+    padding: 0.7rem 0.5rem !important;
+    background-color: transparent !important;
+    border: 1px solid #7EACD1 !important;
+    margin-left: 1rem;
+    transition: all 0.125s ease-in-out !important;
+}
+input.add-to-cart-button:hover{
+    color: #FF5269 !important;
 }
