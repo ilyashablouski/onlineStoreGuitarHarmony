@@ -1,0 +1,28 @@
+.main-container-images{
+    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.05rem;
+    font-size: 0.9rem;
+}
+main{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1300px;
+}
+.main-container-images{
+    flex-basis: 50%;  
+}
+.main-image{
+
+}
+.main-image img{
+    width: 100%;
+    max-width: 100%;
+    width: 470px;
+    height: auto;
+    border: 2px dashed #7EACD1;
+}
+
+.reduced-image{
+    display: inline-block;
+}
