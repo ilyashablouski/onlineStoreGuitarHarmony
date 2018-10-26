@@ -1,16 +1,18 @@
 main{
-    display: flex;
     margin: 0 auto;
-    justify-content: space-between;
     max-width: 1300px;
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
 }
-.main-container-images, ul{
+.main-description{
+    display: flex;
+    justify-content: space-between;
+}
+.main-container-images, ul, table tr{
     font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
 }
 .main-container-images{
+    position: relative;
     font-size: 0.9rem;
-    padding-right: 1.5rem;
     letter-spacing: 0.05rem;
 }
 .main-image img{
@@ -18,15 +20,55 @@ main{
     max-width: 100%;
     width: 470px;
     height: auto;
-    border: 2px dashed #7EACD1;
+}
+.main-image::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../js/zoomEffect/icon.png") no-repeat;
+    width: 33px;
+    height: 33px;
 }
 .small-track-images{
+    padding-top: 1.5rem;
     display: flex;
-    justify-content: start;
+    justify-content: center;
+}
+.zoom-control{
+    display: flex;
+    margin-top: 0.7rem;
+    color: #ADADAD;
+}
+span.zoom, a.fancy-box{
+    position: relative;
+    padding-left: 1.7rem;
+}
+a.fancy-box{
+    margin-left: 0.7rem;
+}
+a.fancy-box:hover{
+    text-decoration: underline;
+}
+span.zoom::after, a.fancy-box::after {
+    position: absolute;
+    top: -0.2rem;
+    left: 0;
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+}
+span.zoom::after{
+    background: url("../js/zoomEffect/pointer_17x17.svg") no-repeat;
+}
+a.fancy-box::after{
+    background: url("../js/zoomEffect/search_17x17.svg") no-repeat;
 }
 .reduced-image{
     display: inline-block;
-    padding-right: 0.5rem;
+    padding-right: 0.7rem;
 }
 .reduced-image:last-child{
     padding-right: 0;
@@ -37,7 +79,8 @@ main{
 }
 section.right-column-info{
     border-left: 2px dashed #7EACD1;
-    padding-left: 0.7rem;
+    margin-left: 1.5rem;
+    padding-left: 1.5rem;
     line-height: 2rem;
 }
 h2.title-item, span.title-price{
@@ -75,4 +118,37 @@ input.add-to-cart-button{
 }
 input.add-to-cart-button:hover{
     color: #FF5269 !important;
+}
+.additional-description{
+    display: flex;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #7EACD1;
+}
+.specification{
+    padding-right: 1rem;
+}
+.specification, .review{
+    flex-basis: 50%;
+}
+caption, .review h3{
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+.review{
+    padding-left: 1rem;
+    border-left: 2px dashed #7EACD1;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+.review h3{
+    text-align: center;
+}
+table td{
+    padding: 0.6rem;
+    letter-spacing: 0.05rem;
+    border-bottom: 1px solid #7EACD1;
+}
+.review span{
+    color: #FF5269;
 }
