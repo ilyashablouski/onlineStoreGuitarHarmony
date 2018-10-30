@@ -23,7 +23,8 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('.reduced-image img').click(function() {
 		var attr = $(this).attr('src');
-    $('.main-image img').attr('src', attr);
+		$('.main-image img').attr('src', attr);
+		$('.fancy-link a').attr('href', attr);
     $('.zoom-effect').trigger('zoom.destroy');
     $('.zoom-effect').zoom();
     });

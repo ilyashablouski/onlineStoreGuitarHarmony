@@ -1,7 +1,7 @@
 main{
     margin: 0 auto;
     max-width: 1300px;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
 }
 .main-description{
     display: flex;
@@ -205,4 +205,7 @@ table td{
     text-align: center;
     font-size: 1.2rem;
     padding-top: 1rem;
+}
+.add-to-cart-container {
+    margin-top: 1.5rem;
 }

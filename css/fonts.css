@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'AlgeriaOne';
+    src: url('../fonts/AlgeriaOne/AlgeriaOne.eot');
+    src: url('../fonts/AlgeriaOne/AlgeriaOne.woff2') format('woff2'),
+        url('../fonts/AlgeriaOne/AlgeriaOne.woff') format('woff'),
+        url('../fonts/AlgeriaOne/AlgeriaOne.ttf') format('truetype'),
+        url('../fonts/AlgeriaOne/AlgeriaOne.svg#AlgeriaOne') format('svg'),
+        url('../fonts/AlgeriaOne/AlgeriaOne.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montresor';
+    src: url('../fonts/Montresor/Montresor.eot');
+    src: url('../fonts/Montresor/Montresor.woff2') format('woff2'),
+        url('../fonts/Montresor/Montresor.woff') format('woff'),
+        url('../fonts/Montresor/Montresor.ttf') format('truetype'),
+        url('../fonts/Montresor/Montresor.svg#Montresor') format('svg'),
+        url('../fonts/Montresor/Montresor.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MoscowSansRegular';
+    src: url('../fonts/MoscowSansRegular/MoscowSansRegular.eot');
+    src: url('../fonts/MoscowSansRegular/MoscowSansRegular.woff2') format('woff2'),
+        url('../fonts/MoscowSansRegular/MoscowSansRegular.woff') format('woff'),
+        url('../fonts/MoscowSansRegular/MoscowSansRegular.ttf') format('truetype'),
+        url('../fonts/MoscowSansRegular/MoscowSansRegular.svg') format('svg'),
+        url('../fonts/MoscowSansRegular/MoscowSansRegular.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}

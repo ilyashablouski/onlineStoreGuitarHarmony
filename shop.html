@@ -9,6 +9,7 @@
   <!-- Import main styles -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/header_footer.css">
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/shop.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>  
 
@@ -18,7 +19,7 @@
     document.createElement("footer" );
     document.createElement("section"); 
     document.createElement("aside"  );
-    document.createElement("nav"    ); class="price"
+    document.createElement("nav"    );
     document.createElement("article"); 
   </script>
   <noscript>
@@ -43,7 +44,7 @@
           <a class="social-icon social-icon-t" href="https://twitter.com" target="_blank"></a>
           <a class="social-icon social-icon-i" href="https://www.instagram.com/?hl=ru" target="_blank"></a>
           <a class="cabinet-link" href="#"><span>Вход</span></a>         
-          <a class="social-icon shop-icon" href="#"><span>1</span></a>        
+          <a class="social-icon shop-icon" href="basket.html"><span>1</span></a>        
         </div>   
       </div>
     </header>
@@ -52,7 +53,7 @@
         <li class="menu-item"><a href="shop.html">Каталог</a></li>
         <li class="menu-item"><a href="index.html">Главная</a></li>
         <li class="menu-item"><a href="#">О нас</a></li>
-        <li class="menu-item"><a href="#">Корзина</a></li>
+        <li class="menu-item"><a href="basket.html">Корзина</a></li>
         <li class="menu-item"><a href="#">Контакты</a></li>
       </ul>
    
@@ -204,7 +205,6 @@
       <a href="#0" class="cd-filter-trigger"><span>Фильтр товаров</span></a>
     </main> <!-- cd-main-content -->
   </div>   
-  
   <footer>
     <div class="container-footer">
       <section class="footer-info">
@@ -212,7 +212,7 @@
           <h3 class="title-footer">Будьте всегда с нами:</h3>
           <form action="" class="search-form-footer" method="POST">
             <input type="email" name="email" id="email-footer" class="input-text-footer" placeholder="Ваш e-mail адрес">
-            <input type="submit" name="join" value="Подписаться" id="btn-submit-footer" >
+            <input type="submit" name="join" value="Подписаться" id="btn-submit-footer" class="submit-btn">
           </form>
         </aside>
       </section>

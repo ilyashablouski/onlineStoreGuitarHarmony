@@ -1,9 +1,14 @@
 html,
 body {
     width: 100%;
-    height: auto;
+    height: 100%;
     font-family: 'Montresor', Arial, Helvetica, sans-serif;
     letter-spacing: .2em;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
 }
 
 html {
@@ -20,6 +25,7 @@ html {
 }
 
 .wrapper {
+    flex: 1 0 auto;
     width: 100%;
     position: relative;
     margin: 0 auto;
@@ -31,7 +37,6 @@ html {
     justify-content: space-between;
     min-width: 740px;
     padding: 0 2rem;
-    border-bottom: 1px solid #7EACD1;
 }
 
 .search-form {
@@ -177,6 +182,7 @@ nav ul li {
 
 nav>ul {
     font-size: 1rem;
+    border-bottom: 1px solid #7EACD1;
 }
 
 .menu-item a:hover {
@@ -192,6 +198,7 @@ a:link {
 }
 
 footer {
+    flex: 0 0 auto;
     width: 100%;
     background-color: #000000;
     font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
@@ -227,7 +234,7 @@ section.footer-info {
 }
 
 .input-text-footer,
-input[type="submit"] {
+.submit-btn {
     border: 1px solid #fff !important;
     background-color: #000000;
     color: #fff;
@@ -241,13 +248,13 @@ input[type="submit"] {
     border-color: rgba(255, 255, 255, .5) !important;
 }
 
-input[type="submit"] {
+.submit-btn {
     margin-top: 1rem;
     padding: .5rem .5rem;
     transition: all 0.125s ease-in-out;
 }
 
-input[type="submit"]:hover {
+.submit-btn:hover {
     border-color: #FF5269 !important;
     color: #FF5269;
     cursor: pointer;
@@ -343,42 +350,6 @@ input[type="submit"]:hover {
     margin-top: -3px;
     margin-left: -7px;
     transform: rotate(-45deg);
-}
-
-@font-face {
-    font-family: 'AlgeriaOne';
-    src: url('../fonts/AlgeriaOne/AlgeriaOne.eot');
-    src: url('../fonts/AlgeriaOne/AlgeriaOne.woff2') format('woff2'),
-         url('../fonts/AlgeriaOne/AlgeriaOne.woff') format('woff'),
-         url('../fonts/AlgeriaOne/AlgeriaOne.ttf') format('truetype'),
-         url('../fonts/AlgeriaOne/AlgeriaOne.svg#AlgeriaOne') format('svg'),
-         url('../fonts/AlgeriaOne/AlgeriaOne.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montresor';
-    src: url('../fonts/Montresor/Montresor.eot');
-    src: url('../fonts/Montresor/Montresor.woff2') format('woff2'),
-         url('../fonts/Montresor/Montresor.woff') format('woff'),
-         url('../fonts/Montresor/Montresor.ttf') format('truetype'),
-         url('../fonts/Montresor/Montresor.svg#Montresor') format('svg'),
-         url('../fonts/Montresor/Montresor.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'MoscowSansRegular';
-    src: url('../fonts/MoscowSansRegular/MoscowSansRegular.eot');
-    src: url('../fonts/MoscowSansRegular/MoscowSansRegular.woff2') format('woff2'),
-         url('../fonts/MoscowSansRegular/MoscowSansRegular.woff') format('woff'),
-         url('../fonts/MoscowSansRegular/MoscowSansRegular.ttf') format('truetype'),
-         url('../fonts/MoscowSansRegular/MoscowSansRegular.svg') format('svg'),
-         url('../fonts/MoscowSansRegular/MoscowSansRegular.eot') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 /*до 768px*/

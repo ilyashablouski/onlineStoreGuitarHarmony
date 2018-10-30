@@ -1,0 +1,122 @@
+main{
+    max-width: 1300px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.table-form{
+    margin-top: 2rem;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+th{
+    padding: 0.5rem 1rem;
+    color: #7EACD1;
+}
+th.item-title{
+    text-align: left;
+}
+th.item-price, th.line-price{
+    text-align: right;
+}
+.line-price, .item-price, .subtotal{
+    text-align: right;
+    padding-right: 1rem;
+}
+td.thumb {
+    width: 60px;
+}
+td.remove{
+    text-align: left;
+    width: 70px;
+    padding-left: 1.5rem;
+}
+td.item-title{
+    text-align: left;
+    padding-left: 1rem;
+}
+td{
+    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    border-top: 1px solid #7EACD1;
+    border-right: 1px solid #7EACD1;
+    vertical-align: middle;
+    text-align: center;
+}
+.quantity{
+    width: 60px;
+    padding: 0 0.5rem;
+}
+td:last-child{
+    border-right: none;
+}
+td:first-child{
+    border-right: none;
+}
+span.icon, .text-quantity{
+    transition: color 0.125s ease-in-out;
+
+}
+span.icon:hover, .text-quantity:hover{
+    color: #FF5269;
+}
+.text-quantity{
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+.submit-update, .button{
+    text-transform: uppercase;
+    border: none;
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    transition: all 0.125s ease-in-out;
+}
+.submit-update:hover, .button:hover{
+    color: #FF5269;
+}
+.button:hover{
+    border-color: #FF5269;
+}
+.update-quantities{
+    border-left: 1px solid #7EACD1;
+    padding: 1rem 0.5rem;
+}
+.subtotal{
+    text-align: right;
+    padding: 1rem;
+    color: #FF5269;
+}
+.checkout-proceed{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 3rem;
+}
+.button{
+    border: 1px solid #7EACD1;
+    padding: 1rem;
+    letter-spacing: 0.5rem;
+    font-family: 'Montresor', Arial, Helvetica, sans-serif;
+}
+.additional-checkout-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.webmoney-btn img{
+    width: 200px;
+    height: auto;
+}
+.label{
+    margin: 0.5rem 0;
+}

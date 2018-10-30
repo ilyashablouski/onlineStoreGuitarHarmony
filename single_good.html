@@ -9,6 +9,7 @@
   <!-- Import main styles -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/header_footer.css">
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/single_good.css">
   <script src="https://raw.githubusercontent.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js"></script>  
 
@@ -43,7 +44,7 @@
           <a class="social-icon social-icon-t" href="https://twitter.com" target="_blank"></a>
           <a class="social-icon social-icon-i" href="https://www.instagram.com/?hl=ru" target="_blank"></a>
           <a class="cabinet-link" href="#"><span>Вход</span></a>         
-          <a class="social-icon shop-icon" href="#"><span>1</span></a>        
+          <a class="social-icon shop-icon" href="basket.html"><span>1</span></a>        
         </div>   
       </div>
     </header>
@@ -52,7 +53,7 @@
         <li class="menu-item"><a href="shop.html">Каталог</a></li>
         <li class="menu-item"><a href="index.html">Главная</a></li>
         <li class="menu-item"><a href="#">О нас</a></li>
-        <li class="menu-item"><a href="#">Корзина</a></li>
+        <li class="menu-item"><a href="basket.html">Корзина</a></li>
         <li class="menu-item"><a href="#">Контакты</a></li>
       </ul>
     </nav>
@@ -63,7 +64,7 @@
         <div class="main-image zoom-effect"><img src="images/guitars/Taylor 814CE Electro Acoustic Guitar/Taylor 814CE_img1.jpg" alt="Taylor_guitar"></div>
         <div class="zoom-control">
           <span class="zoom">Наведите, чтобы увеличить</span>
-          <span class="fancy-link"><a href="#" class="fancy-box">Открыть изображение</a></span>
+          <span class="fancy-link"><a href="images/guitars/Taylor 814CE Electro Acoustic Guitar/Taylor 814CE_img1.jpg" target="_blank" class="fancy-box">Открыть изображение</a></span>  
         </div>
         <div class="small-track-images">
           <div class="reduced-image"><img src="images/guitars/Taylor 814CE Electro Acoustic Guitar/Taylor 814CE_img1.jpg" alt="Taylor_guitar_1"></div>
@@ -86,7 +87,7 @@
           <li>Включает чехол Tayslor deluxe brown hardshell для дополнительной защиты</li>
         </ul>
 
-        <div class="woocommerce-variation-add-to-cart">
+        <div class="add-to-cart-container">
           <input class="input-quantity" type="number" name="quantity" min="1" value="1" size="3" maxlength="3">
           <input class="add-to-cart-button" type="submit" value="В корзину">
         </div>     
@@ -218,8 +219,7 @@
       </div>
       </div>
     </main>
-
-  </div>   
+  </div>
   <footer>
     <div class="container-footer">
       <section class="footer-info">
@@ -227,7 +227,7 @@
           <h3 class="title-footer">Будьте всегда с нами:</h3>
           <form action="" class="search-form-footer" method="POST">
             <input type="email" name="email" id="email-footer" class="input-text-footer" placeholder="Ваш e-mail адрес">
-            <input type="submit" name="join" value="Подписаться" id="btn-submit-footer" >
+            <input type="submit" name="join" value="Подписаться" id="btn-submit-footer" class="submit-btn">
           </form>
         </aside>
       </section>
