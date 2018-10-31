@@ -46,6 +46,8 @@ html {
 
 .button-search {
     position: absolute;
+    top: 0;
+    bottom: 0;
     right: -3rem;
     background: transparent;
     cursor: pointer;
