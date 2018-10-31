@@ -10,6 +10,11 @@ html {
     font-size: 14px;
 }
 
+.shop-container p, .title-item, .price, input[type="email"], footer{
+    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
+}
+
 .font-text-title {
     text-transform: uppercase;
     font-family: 'AlgeriaOne', Arial, Helvetica, sans-serif;
@@ -356,6 +361,8 @@ h3.about-shop-title {
     text-align: center;
 }
 
+
+
 .about-shop-container p {
     padding: 2rem 0;
     line-height: 2rem;
@@ -366,11 +373,6 @@ h3.about-shop-title {
 footer {
     width: 100%;
     background-color: #000000;
-    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
-}
-
-input[type="email"] {
-    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
 }
 
 .container-footer {
@@ -526,9 +528,6 @@ input[type="submit"]:hover {
         left: 5rem;
         bottom: 0;
     }
-    /* div.title-container h3{
-        padding-bottom: 1rem !important;
-    } */
 }
 
 @media (max-width: 650px){
@@ -558,6 +557,7 @@ input[type="submit"]:hover {
     .container-arrivals{
         flex-wrap: wrap;
     }
+
     .block-arrivals{
         flex-basis: 100%;
         margin-bottom: 2rem;

@@ -1,3 +1,7 @@
+.main-container-images, ul, table tr, .review p, .container-products{
+    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
+}
 main{
     margin: 0 auto;
     max-width: 1300px;
@@ -7,19 +11,11 @@ main{
     display: flex;
     justify-content: space-between;
 }
-.main-container-images, ul, table tr{
-    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
-}
 .main-container-images{
     position: relative;
+    max-width: 330px;
     font-size: 0.9rem;
     letter-spacing: 0.05rem;
-}
-.main-image img{
-    width: 100%;
-    max-width: 100%;
-    width: 470px;
-    height: auto;
 }
 .main-image::before{
     content: '';
@@ -118,6 +114,8 @@ input.add-to-cart-button{
 }
 input.add-to-cart-button:hover{
     color: #FF5269 !important;
+    border-color: #FF5269 !important;
+    cursor: pointer;
 }
 .additional-description{
     display: flex;
@@ -144,6 +142,7 @@ caption, .review h3{
 .review h3{
     text-align: center;
 }
+
 table td{
     padding: 0.6rem;
     letter-spacing: 0.05rem;
@@ -179,6 +178,7 @@ table td{
     justify-content: space-between;
     padding-top: 2rem;
     padding-bottom: 1rem;
+
 }
 .prod-item{
     padding: 0.5rem;
@@ -196,6 +196,7 @@ table td{
     font-size: 1.2rem;
     text-align: center;
     transition: color 0.125s ease-in-out;
+    line-height: 1.5rem;
 }
 .prod-item h3:hover{
     color: #FF5269;
