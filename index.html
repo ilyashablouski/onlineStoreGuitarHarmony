@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Title</title>
+  <title>Главная</title>
   <!-- Import main styles -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -37,7 +37,7 @@
         <input type="search" name="s" id="search" class="input-text" placeholder="Поиск по магазину. . ." required="">
         <button class="button-search" type="submit"></button>
       </form>
-      <a href="index.html"><img src="images/logo/logo_1024x768_bl.svg" class="logo-img fluid-img" alt="Guitar Harmony"></a>
+      <a href="index.html" class="link-logo"><img src="images/logo/logo_1024x768_bl.svg" class="logo-img fluid-img" alt="Guitar Harmony"></a>
       <div class="utils">
         <div class="social-links">
           <a class="social-icon social-icon-f" href="https://web.facebook.com" target="_blank"></a>
@@ -70,10 +70,10 @@
 
     <main class="main">
       <div class="container-merits">
-        <div class="block-mer"><div class="block-merits delivery-img"></div><span>Быстрая доставка</span></div>
-        <div class="block-mer"><div class="block-merits choise-img"></div><span>Большой выбор</span></div>
-        <div class="block-mer"><div class="block-merits price-img"></div><span>Выгодные цены  </span></div>
-        <div class="block-mer"><div class="block-merits settings-img"></div><span>Настройка гитар</span></div>
+        <div class="block-merits"><img src="../graduationProject/images/icons/delivery.svg" alt="Delivery" class="fluid-img"><span>Быстрая доставка</span></div>
+        <div class="block-merits"><img src="../graduationProject/images/icons/choise.svg" alt="Choise" class="fluid-img"><span>Большой выбор</span></div>
+        <div class="block-merits"><img src="../graduationProject/images/icons/price.svg" alt="Price" class="fluid-img"><span>Выгодные цены</span></div>
+        <div class="block-merits"><img src="../graduationProject/images/icons/settings.svg" alt="Settings" class="fluid-img"><span>Настройка гитар</span></div>
       </div>
       
       <div class="main-container-arrivals"><h3 class="font-text-title title-header">Новые поступления</h3>
@@ -126,14 +126,18 @@
         <div class="container-categories">
           <div class="item-guitar">
             <img class="fluid-img" src="images/guitars/acoustic_guitar.svg" alt="Acoustic guitar">
-            <h3 class="title-categories font-text-title">Акустические гитары</h3>
-            <a href="#">Перейти в каталог</a>
+            <div class="title-container">
+              <h3 class="title-categories font-text-title">Акустические гитары</h3>
+              <a href="shop.html">Перейти в каталог</a>
+            </div>
           </div>
 
           <div class="item-guitar">
             <img class="fluid-img" src="images/guitars/electric_guitar.svg" alt="Electric guitar">
-            <h3 class="title-categories font-text-title">Электрические гитары</h3>
-            <a href="#">Перейти в каталог</a>
+            <div class="title-container">
+              <h3 class="title-categories font-text-title">Электрические гитары</h3>
+              <a href="shop.html">Перейти в каталог</a>
+            </div>
           </div>
 
         </div>

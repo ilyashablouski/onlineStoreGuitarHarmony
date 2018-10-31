@@ -352,6 +352,10 @@ section.footer-info {
     transform: rotate(-45deg);
 }
 
+
+@media (max-width: 650px) {
+    
+}
 /*до 768px*/
 @media (max-width: 768px) {
     nav>ul {
