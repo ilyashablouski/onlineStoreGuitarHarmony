@@ -576,6 +576,9 @@ input[type="submit"]:hover {
     .title-container h3{
         padding-bottom: 2rem !important;
     }
+    .shop-container p{
+        font-size: 1.2rem;
+    }
     .container-footer{
         flex-wrap: wrap;
     }
@@ -618,7 +621,7 @@ input[type="submit"]:hover {
         bottom: 0;
     }
     .item-guitar:first-child{
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     .item-guitar img{
         transition: none;
