@@ -1,7 +1,7 @@
 main{
     max-width: 1300px;
     margin: 3rem auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 h1{
     text-align: center;
@@ -11,6 +11,9 @@ h1{
     margin-top: 2rem;
 }
 table{
+    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
@@ -28,24 +31,21 @@ th.item-price, th.line-price{
 }
 .line-price, .item-price, .subtotal{
     text-align: right;
-    padding-right: 1rem;
+    padding: 0 0.5rem;
 }
 td.thumb {
     width: 60px;
 }
 td.remove{
     text-align: left;
-    width: 70px;
-    padding-left: 1.5rem;
+    width: 50px !important;
+    padding-left: 1rem;
 }
 td.item-title{
     text-align: left;
-    padding-left: 1rem;
+    padding-left: 0.3rem;
 }
 td{
-    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
     border-top: 1px solid #7EACD1;
     border-right: 1px solid #7EACD1;
     vertical-align: middle;
@@ -93,7 +93,7 @@ span.icon:hover, .text-quantity:hover{
 }
 .subtotal{
     text-align: right;
-    padding: 1rem;
+    padding: 1rem 0.5rem;
     color: #FF5269;
 }
 .checkout-proceed{
@@ -121,4 +121,16 @@ span.icon:hover, .text-quantity:hover{
     margin: 0.7rem 0;
     font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
     letter-spacing: 0.1rem;
+}
+
+@media (max-width: 650px){
+    table{
+        font-size: 0.8rem;
+    }
+    .checkout-proceed{
+        align-items: center;
+    }
+    .submit-update{
+        font-size: 0.8rem;
+    }
 }
