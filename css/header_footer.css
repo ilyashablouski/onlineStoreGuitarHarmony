@@ -39,6 +39,7 @@ html {
 }
 
 .search-form {
+    position: relative;
     margin: auto 0;
 }
 
