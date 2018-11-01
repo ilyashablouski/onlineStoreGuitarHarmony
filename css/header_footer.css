@@ -73,7 +73,7 @@ a,
     border: 0;
 }
 
-input[type="search"],
+.input-text,
 input[type="email"] {
     padding: 0.5rem 0.5rem;
     font-family: 'AlgeriaOne', Arial, Helvetica, sans-serif;
@@ -84,6 +84,7 @@ input[type="email"] {
 
 .input-text:focus {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .4);
+    outline: 0;
 }
 
 .logo-img {

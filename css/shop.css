@@ -78,6 +78,8 @@
     padding: 70px 5%;
     width: 100%;
     font-size: 1.3rem;
+    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
   }
   .cd-gallery li {
     margin-bottom: 1.6em;
@@ -343,6 +345,8 @@
     padding-left: 24px;
     font-size: 1.3rem;
     user-select: none;
+    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
   }
   .cd-filter-block .checkbox-label::before, .cd-filter-block .checkbox-label::after,
   .cd-filter-block .radio-label::before,

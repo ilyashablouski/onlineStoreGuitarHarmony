@@ -118,5 +118,7 @@ span.icon:hover, .text-quantity:hover{
     height: auto;
 }
 .label{
-    margin: 0.5rem 0;
+    margin: 0.7rem 0;
+    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
 }

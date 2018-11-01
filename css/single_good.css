@@ -13,7 +13,7 @@ main{
 }
 .main-container-images{
     position: relative;
-    max-width: 330px;
+    max-width: 400px;
     font-size: 0.9rem;
     letter-spacing: 0.05rem;
 }
