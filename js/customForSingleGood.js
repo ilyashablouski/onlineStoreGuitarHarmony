@@ -26,11 +26,15 @@ $(document).ready(function () {
 		$('.main-image img').attr('src', attr);
 		$('.fancy-link a').attr('href', attr);
     $('.zoom-effect').trigger('zoom.destroy');
-    $('.zoom-effect').zoom();
+    $('.zoom-effect').zoom({
+			touch:false
+		});
     });
 });
 
 //jQuery Zoom
 $(document).ready(function () {
-  $('.zoom-effect').zoom();
+  $('.zoom-effect').zoom({
+		touch:false
+	});
 });
