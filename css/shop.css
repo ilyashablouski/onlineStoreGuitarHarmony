@@ -74,12 +74,14 @@
   xgallery 
   
   -------------------------------- */
-  .cd-gallery {
-    padding: 20px 5%;
-    width: 100%;
-    font-size: 1.3rem;
+  .cd-gallery, form{
     font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
     letter-spacing: 0.1rem;
+  }
+  .cd-gallery {
+    padding: 70px 5% 0px 5%;
+    width: 100%;
+    font-size: 1.3rem;
   }
   .cd-gallery li {
     margin-bottom: 1.6em;
@@ -87,7 +89,7 @@
     display: none;
     text-align: center;
     cursor: pointer;
-    border: 2px dashed #7EACD1;
+    border: 1px solid #7EACD1;
   }
   .cd-gallery li span {
     display: inline-block;
@@ -101,7 +103,7 @@
     color: #FF5269;
   }
   .cd-gallery li.available-item {
-    border: 2px dashed #00FF08;
+    border: 1px solid #00FF08;
   }
   .cd-gallery li.gap {
     /* used in combination with text-align: justify to align gallery elements */
@@ -120,7 +122,7 @@
   }
   @media only screen and (min-width: 768px) {
     .cd-gallery {
-      padding: 70px 3%;
+      padding: 70px 3% 0px 3%;
     }
     .cd-gallery ul {
       text-align: justify;
@@ -140,16 +142,11 @@
   }
   @media only screen and (min-width: 1170px) {
     .cd-gallery {
-      padding: 70px 2%;
+      padding: 70px 2% 0px 2%;
       float: right;
-      transition: width 0.3s;
     }
     .cd-gallery li {
       width: 23%;
-    }
-    .cd-gallery.filter-is-visible {
-      /* reduce width when filter is visible */
-      width: 80%;
     }
     .gul-up {
       visibility: inherit;
@@ -174,7 +171,7 @@
     transform: translateZ(0);
     backface-visibility: hidden;
     transform: translateX(-100%);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.15s;
   }
   .cd-filter::before {
     /* top colored bar */
@@ -233,7 +230,7 @@
     background-position: left center;
     color: #9a9a9a;
     font-weight: 700;
-    transition: all 0.125s ease-out;
+    transition: all 0.125s;
     border-top: 1px dashed #7EACD1;
     border-bottom: 1px solid #7EACD1;
     border-right: 1px dotted #7EACD1;
@@ -245,7 +242,7 @@
   .cd-filter-trigger span {
     display: inline-block;
     position: relative;
-    top: 14px;
+    top: 15px;
   }
   .cd-filter-trigger.filter-is-visible span {
     top: 15px;
@@ -289,7 +286,7 @@
     height: 16px;
     background: url("../images/filter/cd-icon-arrow.svg") no-repeat center center;
     transform: translateY(-50%);
-    transition: transform 0.3s;
+    transition: transform 0.2s;
   }
   .cd-filter-block h4.closed::before {
     transform: translateY(-50%) rotate(-90deg);
@@ -298,7 +295,6 @@
   .cd-filter-block .radio-label::before,
   .cd-filter-block .checkbox-label::before {
     /* shared style for input elements */
-    font-family: "Open Sans", sans-serif;
     border-radius: 0;
     background-color: #ffffff;
     border: 2px solid #e6e6e6;
@@ -345,8 +341,6 @@
     padding-left: 24px;
     font-size: 1.3rem;
     user-select: none;
-    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
-    letter-spacing: 0.1rem;
   }
   .cd-filter-block .checkbox-label::before, .cd-filter-block .checkbox-label::after,
   .cd-filter-block .radio-label::before,

@@ -1,11 +1,9 @@
-.main-container-images, ul, table tr, .review p, .container-products{
-    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
-    letter-spacing: 0.1rem;
-}
 main{
     margin: 0 auto;
     max-width: 1300px;
     padding: 1.5rem 2rem;
+    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
 }
 .main-description{
     display: flex;
@@ -71,13 +69,17 @@ a.fancy-box::after{
 }
 .reduced-image img{
     width: 75px;
-    border: 2px dashed #7EACD1;
+    border: 1px solid #7EACD1;
+    padding: 0.2rem;
 }
-section.right-column-info{
+.right-column-info{
     border-left: 2px dashed #7EACD1;
     margin-left: 1.5rem;
     padding-left: 1.5rem;
     line-height: 2rem;
+}
+.right-column-info, .review p{
+    text-align: justify;
 }
 h2.title-item, span.title-price, .recommend-products h2{
     font-size: 2rem;
@@ -102,6 +104,10 @@ ul{
     border: 1px solid #7EACD1;
     padding: 0.5rem 0.7rem;
     margin-left: 1rem;
+}
+.add-to-cart-button, .title-prod {
+    font-family: 'Montresor', Arial, Helvetica, sans-serif;
+    letter-spacing: .2em;
 }
 input.add-to-cart-button{
     font-size: 1.3rem;

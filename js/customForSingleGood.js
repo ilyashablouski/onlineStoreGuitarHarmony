@@ -21,20 +21,18 @@ $(document).ready(function () {
 
 //Switcher+zoom
 $(document).ready(function () {
+	if ( $(window).width() > 768 ){
     $('.reduced-image img').click(function() {
 		var attr = $(this).attr('src');
 		$('.main-image img').attr('src', attr);
 		$('.fancy-link a').attr('href', attr);
     $('.zoom-effect').trigger('zoom.destroy');
-    $('.zoom-effect').zoom({
-			touch:false
-		});
-    });
+	$('.zoom-effect').zoom();
+    })};
 });
 
 //jQuery Zoom
 $(document).ready(function () {
-  $('.zoom-effect').zoom({
-		touch:false
-	});
-});
+	if ( $(window).width() > 768 ){
+  	$('.zoom-effect').zoom();
+}});
