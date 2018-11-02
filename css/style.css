@@ -10,7 +10,7 @@ html {
     font-size: 14px;
 }
 
-.shop-container p, .title-item, .price, input, .container-merits{
+.shop-container p, .title-item, .price, input, .container-merits, footer{
     font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
     letter-spacing: 0.05rem;
 }
