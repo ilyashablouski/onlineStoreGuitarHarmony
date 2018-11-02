@@ -3,7 +3,7 @@ main{
     max-width: 1300px;
     padding: 1.5rem 2rem;
     font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
 }
 .main-description{
     display: flex;

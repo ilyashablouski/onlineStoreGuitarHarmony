@@ -76,7 +76,7 @@
   -------------------------------- */
   .cd-gallery, form{
     font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
   }
   .cd-gallery {
     padding: 70px 5% 0px 5%;
