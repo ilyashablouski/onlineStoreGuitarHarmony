@@ -16,7 +16,7 @@ html {
 }
 .shop-container p, .title-item, .price, input{
     font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
 }
 
 *, *::after, *::before {
