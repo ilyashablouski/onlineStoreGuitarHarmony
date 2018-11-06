@@ -254,8 +254,6 @@ table td{
     }
     .toogle-tab{
         margin-bottom: 0 !important;
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
-        -webkit-tap-highlight-color: transparent;
     }
     .toogle-tab::after{
         position: absolute;
