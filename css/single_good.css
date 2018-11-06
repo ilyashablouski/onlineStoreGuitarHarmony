@@ -133,22 +133,24 @@ input.add-to-cart-button:hover{
     padding-right: 1rem;
 }
 .specification, .review{
+    width: 100%;
     flex-basis: 50%;
 }
-caption, .review h3{
+.specification h3, .review h3{
+    display: block;
     font-size: 1.5rem;
     padding-bottom: 2rem;
-}
-.review{
-    padding-left: 1rem;
-    border-left: 2px dashed #7EACD1;
-    font-size: 1.3rem;
+    text-align: center;
     line-height: 2rem;
 }
-.review h3{
-    text-align: center;
+.review{
+    padding-left: 1.5rem;
+    border-left: 2px dashed #7EACD1;
+    font-size: 1.3rem;
 }
-
+.review p{
+    line-height: 2rem;
+}
 table td{
     padding: 0.6rem;
     letter-spacing: 0.05rem;
@@ -191,8 +193,6 @@ table td{
 }
 .prod-item img{
     display: block;
-    width: 100%;
-    max-width: 100%;
     width: 140px;
     height: auto;
     margin: 0 auto;
@@ -215,4 +215,76 @@ table td{
 }
 .add-to-cart-container {
     margin-top: 1.5rem;
+}
+
+@media (max-width: 650px) {
+    .main-description, .additional-description{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-container-images{
+        margin-bottom: 2rem;
+    }
+    .zoom{
+        display: none;
+    }
+    .fancy-link{
+        margin: 0 auto;
+    }
+    .right-column-info, .review{
+        margin-left: 0;
+        border-left: 0;
+        padding-left: 0;
+    }
+    .specification{
+        padding-right: 0;
+        margin: 0 auto 1rem auto;
+    }
+    table{
+        width: 100%;
+    }
+    .specification h3, .review h3{
+        position: relative;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        background-color: rgba(126, 172, 209, 0.8);
+        color: #fff;
+        transition: background-color .3s;
+    }
+    .toogle-tab{
+        cursor: pointer;
+        margin-bottom: 0 !important;
+    }
+    .toogle-tab::after{
+        position: absolute;
+        right: 2rem;
+        content: '\f107';
+        font-family: FontAwesome;
+        font-size: 2rem;
+        color: #fff;
+        transition: transform .3s;
+    }
+    .toogle-tab.in{
+        background-color: rgb(104, 161, 207);
+    }
+    .toogle-tab.in::after {
+        transform: rotate(180deg);
+    }
+    .is-invisible{
+        display: none;
+        padding: 1rem 0;
+    }
+    .container-products{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .prod-item img{
+        width: 90%;
+    }
+    .prod-item {
+        border: 1px solid #7EACD1;
+        margin-bottom: 1.6rem;;
+    }
 }
