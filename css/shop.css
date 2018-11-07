@@ -66,7 +66,7 @@
   }
   .cd-main-content.is-fixed .cd-filter-trigger {
     position: fixed;
-    background-color: rgba(126, 172, 209, 0.5);
+    background-color: rgba(126, 172, 209, 0.6);
     color: #ffffff;
   }
   /* -------------------------------- 
@@ -218,7 +218,7 @@
     top: 0;
     left: 2%;
     height: 50px;
-    width: auto%;
+    width: auto;
     padding-left: 26px;
     padding-right: 5px;
     overflow: hidden;

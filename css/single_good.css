@@ -156,6 +156,12 @@ table td{
     letter-spacing: 0.05rem;
     border-bottom: 1px solid #7EACD1;
 }
+.first-td-width{
+    width: 30%;
+}
+.second-td-width{
+    width: 70%;
+}
 .review span{
     color: #FF5269;
 }

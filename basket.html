@@ -33,9 +33,9 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <form action="" class="search-form" method="GET">
+      <form action="URL" class="search-form" method="GET">
         <input type="search" name="s" id="search" class="input-text" placeholder="Поиск по магазину. . ." required="">
-        <button class="button-search" type="submit" class="submit-btn"></button>
+        <button class="button-search" type="submit"></button>
       </form>
       <a href="index.html" class="link-logo"><img src="images/logo/logo_1024x768_bl.svg" class="logo-img fluid-img" alt="Guitar Harmony"></a>
       <div class="utils">
@@ -74,28 +74,26 @@
               <th></th>
             </tr>
             </thead>
-            <tfoot>
               <tr>
-                <td colspan="3"></td>
-                <td class="update-quantities"><input type="submit" id="update-cart" class="submit-update" name="update" value="Обновить"></td>
-                <td class="subtotal">8157.20 руб</td>
-                <td></td>
-              </tr>
-            </tfoot>
-            <tbody>
-              <tr>
-                <td class="thumb"><a href="single_good.html"><img src="../graduationProject/images/guitars/Taylor 814CE Electro Acoustic Guitar/Taylor 814CE_sm_60x60.svg" class="fluid-img" alt="Taylor 814CE" title="Taylor 814CE"></a></td>
+                <td class="thumb"><a href="single_good.html"><img src="../graduationProject/images/guitars/Taylor_814CE_Electro_Acoustic_Guitar/Taylor_814CE_sm_60x60.svg" class="fluid-img" alt="Taylor 814CE" title="Taylor 814CE"></a></td>
                 <td class="item-title">Taylor 814CE Electro Acoustic Guitar</td>
                 <td class="item-price">8157.20 руб</td>
-                <td class="quantity"><input type="text" name="" id="" class="text-quantity" value="1" size="1"></td>
+                <td class="quantity"><input type="text" name="field-quantity" id="quantity" class="text-quantity" value="1" size="1"></td>
                 <td class="line-price">8157.20 руб</td>
                 <td class="remove"><a href="#"><span class="icon">x</span></a></td>
               </tr>
-            </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3"></td>
+                  <td class="update-quantities"><input type="submit" id="update-cart" class="submit-update" name="update" value="Обновить"></td>
+                  <td class="subtotal">8157.20 руб</td>
+                  <td></td>
+                </tr>
+              </tfoot>
           </table>
           <div class="checkout-proceed">
             <div class="additional-checkout-button">
-            <input class="button" type="submit" id="update-cart" name="checkout" value="Оформить заказ">
+            <input class="button" type="submit" id="issue-order" name="checkout" value="Оформить заказ">
               <span class="label">Или с помощью:</span>
               <div class="webmoney-btn"><a href="https://www.webmoney.ru/"><img src="../graduationProject/images/icons/WebMoney_logo_blue.svg" class="fluid-img" alt="Webmoney"></a></div>
             </div>
@@ -107,17 +105,14 @@
   <footer>
     <div class="container-footer">
       <section class="footer-info">
-        <aside>
           <h3 class="title-footer">Будьте всегда с нами:</h3>
-          <form action="" class="search-form-footer" method="POST">
+          <form action="URL" class="search-form-footer" method="POST">
             <input type="email" name="email" id="email-footer" class="input-text-footer" placeholder="Ваш e-mail адрес">
             <input type="submit" name="join" value="Подписаться" id="btn-submit-footer" class="submit-btn">
           </form>
-        </aside>
       </section>
 
       <section class="footer-info">
-        <aside>
           <h3 class="title-footer">Наши контакты:</h3>
           <p>
             Республика Беларусь, г. Минск, 223051
@@ -128,23 +123,18 @@
             <br>
             +37544-738-64-00
           </p>
-        </aside>
 
-        <aside>
           <div class="footer-social-media-container">
             <a href="https://www.facebook.com/" class="button-social-icon button-facebook-icon" target="_blank"></a>
             <a href="https://twitter.com/" class="button-social-icon button-twitter-icon" target="_blank"></a>
             <a href="https://www.instagram.com/" class="button-social-icon button-instagram-icon" target="_blank"></a>
           </div>
-        </aside>
       </section>
       
-      <section class="footer-info">
-        <aside>
+      <div class="footer-info">
           <div class="footer-logo">
             <img src="images/logo/logo_1024x768_wh.svg" class="fluid-img" alt="Guitar harmony"></div>
-        </aside>
-      </section>
+      </div>
     </div>
 
     <div class="footer-site-info">
@@ -155,7 +145,7 @@
   <div class="gul-up"></div>
 
   <!--Import jQuery-->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
   <!-- jQuery for older IE -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Site Sripts -->  
