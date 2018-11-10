@@ -2,12 +2,12 @@ html, body {
     width: 100%;
     height: auto;
     font-family: 'Montresor', Arial, Helvetica, sans-serif;
-    letter-spacing: .2em;
+    letter-spacing: .2rem;
 }
 html {
     font-size: 14px;
 }
-.shop-container p, .title-item, .price, input, .container-merits, footer{
+.shop-container p, .title-item, .price, input, .container-merits{
     font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
     letter-spacing: 0.05rem;
 }
@@ -34,7 +34,6 @@ html {
     position: relative;
     margin: 0 auto;
 }
-/* Стили для header*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -139,7 +138,6 @@ a, .button-search:active, .button-search:focus, .input-text {
     padding-left: 0.3rem;
     font-size: 1.2rem;
 }
-/* Стили для nav*/
 .menu {
     display: flex;
     justify-content: center;
@@ -193,7 +191,6 @@ a, a:visited, a:link {
     text-align: center;
     font-size: 3rem;
 }
-/* Главная часть */
 .container-merits {
     max-width: 1300px;
     display: flex;
@@ -320,11 +317,11 @@ h3.about-shop-title {
     padding: 2rem 0;
     line-height: 2rem;
 }
-/*Стиль для футера */
 footer {
     width: 100%;
     background-color: #000000;
-}
+    font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
+}    
 .container-footer {
     display: flex;
     justify-content: space-between;
@@ -418,7 +415,6 @@ input[type="submit"]:hover {
     width: auto;
     height: 35px;
 }
-/* Кнопка скроллинга */
 .gul-up {
     position: fixed;
     bottom: 60px;
@@ -520,6 +516,10 @@ input[type="submit"]:hover {
         flex-basis: 100% !important;
         margin-bottom: 2rem;
         text-align: center;
+   }
+   .footer-site-info>p{
+    font-size: 0.8rem;
+    line-height: 1.3;
    }
 }
 @media (max-width: 870px) {
