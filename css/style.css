@@ -445,6 +445,11 @@ input[type="submit"]:hover {
     margin-left: -7px;
     transform: rotate(-45deg);
 }
+@media (max-width: 325px){
+    .item-guitar a{
+        padding: .5rem .3rem;
+    }
+}
 @media (max-width: 430px){
     div.item-guitar div.title-container{
         top: 5rem;
