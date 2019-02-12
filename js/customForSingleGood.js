@@ -40,13 +40,27 @@ $(document).ready(function () {
 //Zoom
 $(document).ready(function () {
 	if ( $(window).width() > 768 ){
-  	$('.zoom-effect').zoom();
+	$('.zoom-effect').zoom();
 }});
 
 //Tabs
+function openMenu(){
+	// if ( $(window).width() <= 650) {
+	// 	if($(this).next().hasClass('in')){
+	// 		$(this).next().slideUp(300).removeClass('in');
+	// 	} else {
+	// 		$(this).next().slideDown(300).addClass('in');
+	// 	}
+	// } else {
+	// 	return false;
+	// }
+	if ( $(window).width() <= 650) {
+		$(this).toggleClass('in').next().slideToggle(300);
+	}
+}
+
 $(document).ready(function () {
-	if ( $(window).width() <= 650 ){
-		$('.toogle-tab').click(function() {
-			$(this).toggleClass('in').next().slideToggle(300);
-		})
-}});
+	$('.toogle-tab').on('click', openMenu);	
+});
+
+

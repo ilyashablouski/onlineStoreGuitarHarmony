@@ -293,3 +293,8 @@ table td{
         margin-bottom: 1.6rem;;
     }
 }
+@media (min-width: 651px) {
+    .is-invisible{
+        display: block !important;
+    }
+}
