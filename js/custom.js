@@ -1,7 +1,7 @@
 // Slider
 $(document).ready(function () {
 	$('.slider').glide({
-		autoplay: 3500,
+		autoplay: 4000,
 		hoverpause: true,
 		arrowRightText: '&rarr;',
 		arrowLeftText: '&larr;'
