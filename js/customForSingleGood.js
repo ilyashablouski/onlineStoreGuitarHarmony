@@ -45,15 +45,6 @@ $(document).ready(function () {
 
 //Tabs
 function openMenu(){
-	// if ( $(window).width() <= 650) {
-	// 	if($(this).next().hasClass('in')){
-	// 		$(this).next().slideUp(300).removeClass('in');
-	// 	} else {
-	// 		$(this).next().slideDown(300).addClass('in');
-	// 	}
-	// } else {
-	// 	return false;
-	// }
 	if ( $(window).width() <= 650) {
 		$(this).toggleClass('in').next().slideToggle(300);
 	}
