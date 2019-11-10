@@ -1,79 +1,107 @@
-main{
+main {
     max-width: 1300px;
     margin: 3rem auto;
     padding: 0 1rem;
     font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
     letter-spacing: 0.05rem;
 }
-h1{
+
+h1 {
     text-align: center;
     font-size: 1.5rem;
 }
-.table-form{
+
+.table-form {
     margin-top: 2rem;
 }
-table{
+
+table {
     font-size: 1rem;
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
     margin-bottom: 4rem;
 }
-th{
+
+th {
     padding: 0.5rem 1rem;
     color: #7EACD1;
 }
-th.item-title{
+
+th.item-title {
     text-align: left;
 }
-th.item-price, th.line-price{
+
+th.item-price,
+th.line-price {
     text-align: right;
 }
-.line-price, .item-price, .subtotal{
+
+.line-price,
+.item-price,
+.subtotal {
     text-align: right;
     padding: 0 0.5rem;
 }
+
 td.thumb {
     width: 60px;
 }
-td.remove{
+
+td.remove {
     text-align: left;
     width: 50px !important;
     padding-left: 1rem;
 }
-td.item-title{
+
+td.item-title {
     text-align: left;
     padding-left: 0.3rem;
 }
-td{
+
+td {
     border-top: 1px solid #7EACD1;
     border-right: 1px solid #7EACD1;
     vertical-align: middle;
     text-align: center;
 }
-.quantity{
+
+.quantity {
     width: 60px;
     padding: 0 0.5rem;
 }
-td:last-child{
+
+td:last-child {
     border-right: none;
 }
-td:first-child{
+
+td:first-child {
     border-right: none;
 }
-span.icon, .text-quantity{
+
+.remove-button {
+    font-size: 17px;
+}
+
+.remove-button,
+.text-quantity {
     transition: color 0.125s ease-in-out;
 
 }
-span.icon:hover, .text-quantity:hover{
+
+.remove-button:hover,
+.text-quantity:hover {
     color: #FF5269;
 }
-.text-quantity{
+
+.text-quantity {
     width: 100%;
     border: none;
     text-align: center;
 }
-.submit-update, .button{
+
+.submit-update,
+.button {
     text-transform: uppercase;
     border: none;
     background-color: #fff;
@@ -81,52 +109,64 @@ span.icon:hover, .text-quantity:hover{
     cursor: pointer;
     transition: all 0.125s ease-in-out;
 }
-.submit-update:hover, .button:hover{
+
+.submit-update:hover,
+.button:hover {
     color: #FF5269;
 }
-.button:hover{
+
+.button:hover {
     border-color: #FF5269;
 }
-.update-quantities{
+
+.update-quantities {
     border-left: 1px solid #7EACD1;
     padding: 1rem 0.5rem;
 }
-.subtotal{
+
+.subtotal {
     text-align: right;
     padding: 1rem 0.5rem;
     color: #FF5269;
 }
-.checkout-proceed{
+
+.checkout-proceed {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin: 3rem;
 }
-.button{
+
+.button {
     border: 1px solid #7EACD1;
     padding: 1rem;
 }
-.additional-checkout-button{
+
+.additional-checkout-button {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.webmoney-btn img{
+
+.webmoney-btn img {
     width: 200px;
     height: auto;
 }
-.label{
+
+.label {
     margin: 0.7rem 0;
 }
 
-@media (max-width: 650px){
-    table{
+@media (max-width: 650px) {
+    table {
         font-size: 0.8rem;
     }
-    .checkout-proceed{
+
+    .checkout-proceed {
         align-items: center;
     }
-    .submit-update{
+
+    .submit-update {
         font-size: 0.8rem;
     }
 }

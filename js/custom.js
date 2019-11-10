@@ -28,3 +28,16 @@ $(document).ready(function () {
 		}, 500);
 	});
 });
+
+
+// //Delete button from basket
+let crossButton = document.querySelector('.remove-button');
+let product = document.querySelector('table');
+
+function removeButton() {
+	product.remove();
+}
+
+crossButton.addEventListener('click', removeButton);
+
+
