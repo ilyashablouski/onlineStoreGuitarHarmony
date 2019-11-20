@@ -1,10 +1,10 @@
-// Scrolling button
+// Scroll button
 $(document).ready(function () {
 	$(window).scroll(function () {
 		if ($(window).scrollTop() >= 300) {
-			$('.gul-up').show('fast');
+			$('.gul-up').show('slow');
 		} else {
-			$('.gul-up').hide('fast');
+			$('.gul-up').hide('slow');
 		}
 	});
 	if ($(window).scrollTop() >= 300) {
