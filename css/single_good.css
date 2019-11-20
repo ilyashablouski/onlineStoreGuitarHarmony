@@ -63,6 +63,7 @@ a.fancy-box::after{
 .reduced-image{
     display: inline-block;
     padding-right: 0.7rem;
+    cursor: pointer;
 }
 .reduced-image:last-child{
     padding-right: 0;
